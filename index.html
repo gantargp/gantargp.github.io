@@ -77,12 +77,35 @@ h1{text-align: center; font-weight:bold; text-shadow: 0px 1px 0px rgba(0,0,0,.5)
 
 </section>
 <section style="clear:both"><br><p>&copy;2018 sk samim & tapas k chatterjee </p></section>
-
+<form id="srch-form">
+     <label for="msrno">muster roll</label>
+     <input type="TextBox" ID="msrno" oninput="msrcombine()" placeholder="xxxxx">
+     <a id="msr" href="#" onclick="msrcombine()" target="_blank"><span class="srch-icon">&#x1F50D;search</span></a>
+     
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+     <label for="miscode">work</label>
+     <input type="TextBox" ID="miscode" oninput="wrkcombine()" placeholder="if/iay/xxxxxxx">
+     <a id="wrk" href="#" onclick="wrkcombine()" target="_blank">&#x1F50D;search</a>
+</form>
 
 </div>
 
 
 
-
+<script type="text/javascript">
+function msrcombine() {
+  var mrno = document.getElementById('msrno').value;
+  var msrURL = 'http://mnregaweb4.nic.in/netnrega/master_search1.aspx?flag=2&wsrch=msr&district_code=3225&state_name=WEST%20BENGAL&district_name=PURBA%20BARDHAMAN&short_name=WB&srch='+mrno;
+    document.getElementById('msr').href = msrURL;
+ }
+ 
+ function wrkcombine() { 
+  var code = document.getElementById('miscode').value;
+  var wrkURL = 'http://mnregaweb4.nic.in/netnrega/master_search1.aspx?flag=2&wsrch=wrk&district_code=3225&state_name=WEST%20BENGAL&district_name=PURBA%20BARDHAMAN&short_name=WB&srch=3202002007/'+code;
+ 
+  document.getElementById('wrk').href = wrkURL;
+}
+</script>
 </body>
 </html>
