@@ -5,7 +5,7 @@
 <title>Gope Gantar-1 Gram Panchayat</title>
 <style type="text/css">
  
-body , a  {font-size:1.3em;  text-decoration:none; font-weight:bold;text-shadow: 0em 0.063em 0em rgba(0,0,0,.5); text-align: center; margin: 0}
+body , a  {font-size:1.3em;  text-decoration:none; font-weight:bold;text-shadow: 0em 0.04em 0em rgba(0,0,0,.5); text-align: center; margin: 0}
 div {max-width: 50em; min-height:100%; margin: auto;  }
 .bar .theme-changer{font-size: 0.75em;}
 li , ol{ list-style:none; text-align: left; }
@@ -38,10 +38,6 @@ p{margin: 0;}
 <meta name="keywords" content="gantargp, Gantargp, GantarGP, GANTARGP,gantar-1, gantar, Gantar, GANTAR, gantar panchayat, gantar gp, Gantar Panchayat,Gope Gantar-1 Gram Panchayat">
 <meta name="description" content="Gope Gantar-1 Gram Panchayat Home Page. Serving the area since 1968">
 
-
-
-
-
 <link rel="stylesheet" type="text/css" href="styles1.css" title="styles1" media="screen" />
 <link rel="alternate stylesheet" type="text/css" href="styles2.css" title="styles2" media="screen" />
 <link rel="alternate stylesheet" type="text/css" href="styles3.css" title="styles3" media="screen" />
@@ -51,15 +47,7 @@ p{margin: 0;}
 <link rel="alternate stylesheet" type="text/css" href="styles7.css" title="styles7" media="screen" />
 
 
-
-
-
-
-
-
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<script type="text/javascript" src="styleswitch.js"></script>
+<script type="text/javascript" src="styleswitcher.js"></script>
 
 
 
@@ -67,9 +55,6 @@ p{margin: 0;}
 <body>
 
 <div>
-
- 
-	
 
 
 <section><h1>Gope Gantar-1 Gram Panchayat</h1></section>
@@ -157,16 +142,19 @@ p{margin: 0;}
 
 </section>
  
-<section class="bar"><span class="theme-changer">change theme: 
-		<a href="serversideSwitch.html?style=style1" rel="styles1" class="styleswitch">blue</a> || 
-		<a href="serversideSwitch.html?style=style2" rel="styles2" class="styleswitch">pink</a> || 
-		<a href="serversideSwitch.html?style=style3" rel="styles3" class="styleswitch">green</a> ||
-		<a href="serversideSwitch.html?style=style4" rel="styles4" class="styleswitch">sky</a> ||
-		<a href="serversideSwitch.html?style=style5" rel="styles5" class="styleswitch">black</a> ||
-		<a href="serversideSwitch.html?style=style6" rel="styles6" class="styleswitch">maroon</a> ||
-	   	<a href="serversideSwitch.html?style=style7" rel="styles7" class="styleswitch">gray</a>
-		</span>
-	</section>
+<section class="bar">
+
+<span class="theme-changer">change theme: 
+<a href="#" onclick="setActiveStyleSheet('styles1'); return false;">blue</a> ||
+<a href="#" onclick="setActiveStyleSheet('styles2'); return false;">pink</a> ||
+<a href="#" onclick="setActiveStyleSheet('styles3'); return false;">green</a> ||
+<a href="#" onclick="setActiveStyleSheet('styles4'); return false;">sky</a> ||
+<a href="#" onclick="setActiveStyleSheet('styles5'); return false;">black</a> ||
+<a href="#" onclick="setActiveStyleSheet('styles6'); return false;">maroon</a> ||
+<a href="#" onclick="setActiveStyleSheet('styles7'); return false;">gray</a>
+</span>
+
+</section>
 
 <section class="last"> <br />
 <p> you liked the old site? click here <a href="oldsite.html">old theme</a></p>
