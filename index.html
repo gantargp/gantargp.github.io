@@ -33,7 +33,7 @@
             min-height: 100%;
             margin: auto
         }
-       .lnk{margin:auto;width:98%;}
+       
        .theme-changer a,  .theme-changer {
             font-size: .75em
         }
@@ -44,11 +44,11 @@
             text-align: left
         }
 
-        ol {
+        /*ol {
             float: left;
             height: 17.5em;
             margin: .6em
-        }
+        }*/
         
         #msr,
         #wrk {
@@ -81,13 +81,16 @@
         }
         .link-cont {
             margin:auto; width:100%;
-            
+            display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        margin: 0; 
         }
-        .link-cont:after {
+        /*.link-cont:after {
             content: "";
             display: table;
             clear: both
-        }
+        }*/
         
         .bar {
             height: 6em;
@@ -99,6 +102,12 @@
                 height: 1.5em;
                 box-shadow: 0 .125em .125em rgba(0, 0, 0, .5)
             }
+            .link-cont {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+        margin: 0; 
+                        }
         }
         
         #iframe-cont {
