@@ -86,19 +86,15 @@
         grid-gap: 1em;
         margin: 0; 
         }
-        /*.link-cont:after {
-            content: "";
-            display: table;
-            clear: both
-        }*/
+
         
         .bar {
-            height: 10em;
+            height: 7em;
             box-shadow: 0 .125em .125em rgba(0, 0, 0, .5)
         }
         
         @media screen and (min-width:25em) {
-        .srch-form, .srch-form2, .link-cont {
+        .bar , .link-cont {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
@@ -173,7 +169,7 @@
             <h2>Serving the area since 1968.</h2><br>
         </section>
         <section class="bar">
-            <form id="srch-form"><div><label for="msrno">muster roll</label><input type="TextBox" id="msrno" oninput="msrcombine()" placeholder="xxxxx"> <a id="msr" href="#" onclick="msrcombine()" target="_blank">🔍search</a></div><div>     <a href="http://gantargp.tk/">🌎</a>     </div> <div><label for="miscode">work</label><input type="TextBox" id="miscode" oninput="wrkcombine()" placeholder="xxxxxxx"> <a id="wrk" href="#" onclick="wrkcombine()" target="_blank">🔍search</a></div></form>
+            <div><label for="msrno">muster roll</label><input type="TextBox" id="msrno" oninput="msrcombine()" placeholder="xxxxx"> <a id="msr" href="#" onclick="msrcombine()" target="_blank">🔍search</a></div><div>     <a href="http://gantargp.tk/">🌎</a>     </div> <div><label for="miscode">work</label><input type="TextBox" id="miscode" oninput="wrkcombine()" placeholder="xxxxxxx"> <a id="wrk" href="#" onclick="wrkcombine()" target="_blank">🔍search</a></div>
         </section>
         <section class="link-cont">
             <ol>
@@ -238,7 +234,7 @@
             
         </section>
         <section class="bar">
-        <form id="srch-form-2"><div><label for="wglno">wage list</label><input type="TextBox" id="wglno" oninput="wglcombine()" placeholder="xxxxx"> <a id="wgl" href="#" onclick="wglcombine()" target="_blank">🔍search</a></div> <div>     <a href="http://gantargp.tk/">🌎</a>     </div><div><label for="ftono">fto</label><input type="TextBox" id="ftono" oninput="ftocombine()" placeholder="xxxxxxx"> <a id="fto" href="#" onclick="ftocombine()" target="_blank">🔍search</a></div></form>
+        <div><label for="wglno">wage list</label><input type="TextBox" id="wglno" oninput="wglcombine()" placeholder="xxxxx"> <a id="wgl" href="#" onclick="wglcombine()" target="_blank">🔍search</a></div> <div>     <a href="http://gantargp.tk/">🌎</a>     </div><div><label for="ftono">fto</label><input type="TextBox" id="ftono" oninput="ftocombine()" placeholder="xxxxxxx"> <a id="fto" href="#" onclick="ftocombine()" target="_blank">🔍search</a></div> 
         
         </section>
         <section class="last">
