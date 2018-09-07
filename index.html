@@ -60,10 +60,10 @@
             margin: 0 0 .25em
         }
         
-       /* ol:first-child {
+      ol:first-child {
             border: none;
-            padding-left: .125em
-        }*/
+           
+        }
         
         .last {
             font-size: .7em
@@ -98,6 +98,20 @@
         }
         
         @media screen and (min-width:50em) {
+        .link-cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        margin: 0; 
+                        }
+            
+            
+            
+            
+        }
+        
+        
+        @media screen and (min-width:50em) {
             .bar {
                 height: 1.5em;
                 box-shadow: 0 .125em .125em rgba(0, 0, 0, .5)
@@ -109,12 +123,12 @@
         margin: 0; 
                         }
         }
-        
+       /* 
         #iframe-cont {
           
         }
         
-       /* #Rel_Perf,
+        #Rel_Perf,
         #fin_stmnt,
         #fto_stat {
             height: 33em;
@@ -122,7 +136,7 @@
         }*/
         
         iframe {
-           height: 33em;
+           height: 35em;
            width: 99%;
           
         }
